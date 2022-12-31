@@ -51,34 +51,39 @@ NOTE: When shell type isn't defined shell will be automatically identified based
 
 Bash:
 
-  $ source <(zsysctl completion bash)
+```bash
+source <(zsysctl completion bash)
 
-  # To load completions for each session, execute once:
-  # Linux:
-  $ zsysctl completion bash > /etc/bash_completion.d/zsysctl
-  # macOS:
-  $ zsysctl completion bash > /usr/local/etc/bash_completion.d/zsysctl
+# To load completions for each session, execute once:
+# Linux:
+zsysctl completion bash > /etc/bash_completion.d/zsysctl
+# macOS:
+zsysctl completion bash > /usr/local/etc/bash_completion.d/zsysctl
+```
 
 Zsh:
 
-  # If shell completion is not already enabled in your environment,
-  # you will need to enable it.  You can execute the following once:
+```zsh
+# If shell completion is not already enabled in your environment,
+# you will need to enable it.  You can execute the following once:
 
-  $ echo "autoload -U compinit; compinit" >> ~/.zshrc
+echo "autoload -U compinit; compinit" >> ~/.zshrc
 
-  # To load completions for each session, execute once:
-  $ zsysctl completion zsh > "${fpath[1]}/_zsysctl"
+# To load completions for each session, execute once:
+zsysctl completion zsh > "${fpath[1]}/_zsysctl"
 
-  # You will need to start a new shell for this setup to take effect.
+# You will need to start a new shell for this setup to take effect.
+```
 
 PowerShell:
 
-  PS> zsysctl completion powershell | Out-String | Invoke-Expression
+```powershell
+zsysctl completion powershell | Out-String | Invoke-Expression
 
-  # To load completions for every new session, run:
-  PS> zsysctl completion powershell > zsysctl.ps1
-  # and source this file from your PowerShell profile.
-
+# To load completions for every new session, run:
+zsysctl completion powershell > zsysctl.ps1
+# and source this file from your PowerShell profile.
+```
 
 ```
 zsysctl completion [bash|zsh|powershell] [flags]
@@ -603,34 +608,39 @@ NOTE: When shell type isn't defined shell will be automatically identified based
 
 Bash:
 
-  $ source <(zsysd completion bash)
+```bash
+source <(zsysd completion bash)
 
-  # To load completions for each session, execute once:
-  # Linux:
-  $ zsysd completion bash > /etc/bash_completion.d/zsysd
-  # macOS:
-  $ zsysd completion bash > /usr/local/etc/bash_completion.d/zsysd
+# To load completions for each session, execute once:
+# Linux:
+zsysd completion bash > /etc/bash_completion.d/zsysd
+# macOS:
+zsysd completion bash > /usr/local/etc/bash_completion.d/zsysd
+```
 
 Zsh:
 
-  # If shell completion is not already enabled in your environment,
-  # you will need to enable it.  You can execute the following once:
+```zsh
+# If shell completion is not already enabled in your environment,
+# you will need to enable it.  You can execute the following once:
 
-  $ echo "autoload -U compinit; compinit" >> ~/.zshrc
+echo "autoload -U compinit; compinit" >> ~/.zshrc
 
-  # To load completions for each session, execute once:
-  $ zsysd completion zsh > "${fpath[1]}/_zsysd"
+# To load completions for each session, execute once:
+zsysd completion zsh > "${fpath[1]}/_zsysd"
 
-  # You will need to start a new shell for this setup to take effect.
+# You will need to start a new shell for this setup to take effect.
+```
 
 PowerShell:
 
-  PS> zsysd completion powershell | Out-String | Invoke-Expression
+```powershell
+zsysd completion powershell | Out-String | Invoke-Expression
 
-  # To load completions for every new session, run:
-  PS> zsysd completion powershell > zsysd.ps1
-  # and source this file from your PowerShell profile.
-
+# To load completions for every new session, run:
+zsysd completion powershell > zsysd.ps1
+# and source this file from your PowerShell profile.
+```
 
 ```
 zsysd completion [bash|zsh|powershell] [flags]
