@@ -20,3 +20,5 @@ vendor/
 *.log
 *.code-workspace
 
+# nano
+*.save
